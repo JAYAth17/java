@@ -1,0 +1,18 @@
+import java.io.*;
+
+class student{ 
+
+public int addition() {
+int a = 900 , b=98;
+int c = a +b;
+return c ;
+}
+}
+class sample5 {
+public static void main (String[] args) {
+student s1 = new student();
+int f = s1.addition();
+System.out.print(f);
+}
+}
+
