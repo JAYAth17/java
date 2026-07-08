@@ -1,0 +1,18 @@
+
+import java.io.*;
+class football{
+String name;
+int Jersey_no;
+public void getdetails(){
+System.out.print(" Enter the Name"+name);
+System.out.print("Enter the jersey no "+ Jersey_no);
+}
+}
+class sample1{
+public static void main(String[] args) {
+football f1= new football();
+f1.name = "Messi";
+f1.Jersey_no = 10;
+f1.getdetails();
+}
+}
