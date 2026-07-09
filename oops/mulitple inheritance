@@ -1,0 +1,18 @@
+import java.io.*;
+class football {
+public void player (){
+System.out.println(" The Goat : Messi ");
+}
+}
+class brand extends football {
+public void ad() {
+System.out.println(" Brand : Adidas");
+}
+}
+class messi {
+public static void main (String[] args){
+brand bs = new brand();
+bs.player();
+bs.ad();
+}
+}
