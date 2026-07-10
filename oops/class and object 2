@@ -1,0 +1,20 @@
+import java.io.*;
+class Student {
+String name;
+int age ; 
+void display(){
+System.out.print(" Name " + name);
+System.out.print( " age" + age);
+}
+class sample2
+public static void main(String [] args) {
+Student s1= new Student();
+s1.name= "Jayanth";
+s1.age= 21;
+Student s2 = new Student();
+s2.name = " Messi" ;
+s2.age=  39;
+s1.display();
+System.out.print();
+s2.display();
+}
