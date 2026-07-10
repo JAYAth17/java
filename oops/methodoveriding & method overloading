@@ -1,0 +1,19 @@
+import java.io.*;
+class student {
+void name() {
+String a = " Jayanth";
+System.out.println( a);
+}
+}
+class age extends student {
+void name() { 
+int aa = 100;
+System.out.println( aa+10);
+}
+}
+class sample34 {
+public static void main(String[] args) {
+age s1 = new age();
+s1.name();
+}
+}
