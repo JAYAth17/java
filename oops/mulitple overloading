@@ -1,0 +1,26 @@
+import java.io.*;
+class student {
+void name() {
+String a = " Jayanth";
+String b = " Kalpana" ; 
+String c = " Chandru" ;
+System.out.println( a);
+System.out.println( b);
+System.out.println( c);
+}
+void name(int x) { 
+int aa = 100;
+int bb = 97;
+int cc = 54;
+System.out.println( aa+10);
+System.out.println( bb-7);
+System.out.println( cc+23);
+}
+}
+class sample33 {
+public static void main(String[] args) {
+student s1 = new student();
+s1.name();
+s1.name(1);
+}
+}
