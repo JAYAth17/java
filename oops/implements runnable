@@ -1,0 +1,32 @@
+class FootballPlayer implements Runnable
+{
+    String name;
+
+    FootballPlayer(String name)
+    {
+        this.name = name;
+    }
+
+    public void run()
+    {
+        for(int i = 1; i <= 5; i++)
+        {
+            System.out.println(name + " is training - Round " + i);
+        }
+    }
+}
+
+class Demo
+{
+    public static void main(String args[])
+    {
+        FootballPlayer p1 = new FootballPlayer("Messi");
+        FootballPlayer p2 = new FootballPlayer("Ronaldo");
+
+        Thread t1 = new Thread(p1);
+        Thread t2 = new Thread(p2);
+
+        t1.start();
+        t2.start();
+    }
+}
