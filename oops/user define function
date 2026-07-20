@@ -1,0 +1,60 @@
+import java.util.Scanner;
+
+class AgeException extends Exception
+{
+    AgeException(String message)
+    {
+        super(message);
+    }
+}
+
+class FootballPlayer
+{
+    String name;
+    int age;
+
+    FootballPlayer(String name, int age)
+    {
+        this.name = name;
+        this.age = age;
+    }
+
+    void checkEligibility() throws AgeException
+    {
+        if(age < 18)
+        {
+            throw new AgeException("Player is not eligible for the senior team.");
+        }
+        else
+        {
+            System.out.println(name + " is eligible for the senior team.");
+        }
+    }
+}
+
+class Demo
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Player Name: ");
+        String name = sc.nextLine();
+
+        System.out.print("Enter Player Age: ");
+        int age = sc.nextInt();
+
+        FootballPlayer p = new FootballPlayer(name, age);
+
+        try
+        {
+            p.checkEligibility();
+        }
+        catch(AgeException e)
+        {
+            System.out.println(e.getMessage());
+        }
+
+        sc.close();
+    }
+}
